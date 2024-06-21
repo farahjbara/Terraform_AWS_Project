@@ -3,9 +3,10 @@
 This repository  contains Terraform code to deploy a secure, scalable AWS infrastructure for Travel Salmon. It includes VPCs, subnets, EC2 instances, RDS, and an Application Load Balancer. Follows best practices for security and resource management, supporting both development and production environments.
 
 ## Project Requirements
-- AWS account 
-- Terraform installed on your machine
 
+- Terraform: Ensure Terraform is installed and configured on your machine. <br>
+- AWS CLI: Configure AWS CLI with appropriate credentials. <br>
+- Access to AWS Account: Necessary permissions to create and manage resources in AWS. <br>
 ## Architecture diagram
 
 The infrastructure is contained within a single VPC named InternalVPC. It is comprised of eight subnets across two availability zones, divided into “layers” of two subnets each:
@@ -18,7 +19,7 @@ The infrastructure is contained within a single VPC named InternalVPC. It is com
 
 
 Here's the architecture diagram:<br>
-![Architectural Diagram for Startup)](Terraform_AWS_Project/infrastructure_diagram.png)
+![Architectural Diagram for Startup)](infrastructure-diagram.png)
 
 ## Usage
 
@@ -42,4 +43,3 @@ To use the Terraform configurations in this repository, follow these general ste
    ```bash
    terraform apply
    ```
-
