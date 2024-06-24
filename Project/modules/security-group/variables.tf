@@ -41,7 +41,6 @@ variable "egress_rules" {
     }
   ]
 }
-
 variable "tags" {
   description = "Tags for the security group"
   type        = map(string)

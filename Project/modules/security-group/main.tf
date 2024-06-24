@@ -12,7 +12,6 @@ resource "aws_security_group" "this" {
       cidr_blocks = ingress.value.cidr_blocks
     }
   }
-
   dynamic "egress" {
     for_each = var.egress_rules
     content {
